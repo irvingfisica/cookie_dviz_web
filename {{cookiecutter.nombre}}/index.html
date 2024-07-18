@@ -15,7 +15,12 @@
             <div class="col-md-12">
                 <h1>{{cookiecutter.titulo}}</h1>
                 <p class="lead">{{cookiecutter.descripcion}}</p>
-                    <div id="graf"></div>
+            </div>
+            <div class="col-md-6">
+                <div id="graf"></div>
+            </div>
+            <div class="col-md-6">
+                <div id="mapa"></div>
             </div>
         </div>
     </div>
@@ -25,5 +30,6 @@
 <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
 <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
 <script src="./libs/topojson/topojson.v2.min.js"></script>
+<script src='https://unpkg.com/@turf/turf@6.3.0/turf.min.js'></script>
 <script src="./js/script.js" type="module"></script>
 </html>

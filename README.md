@@ -4,10 +4,7 @@ Template para generar una web para dataviz
 Este es un template para generar una web para dataviz usando:
 - [Plotjs](https://observablehq.com/plot/)
 - [D3js](https://d3js.org/)
-- [Leaflet](https://leafletjs.com/)
-- [Topojson](https://github.com/topojson/topojson)
 - [Bootstrap](https://getbootstrap.com/)
-- Douze
 
 Requerimientos
 ------------

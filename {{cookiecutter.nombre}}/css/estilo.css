@@ -1,3 +1,38 @@
 body {
     font-family: "Roboto Condensed", sans-serif;
 }
+
+:root {
+    --grid-col-width: 80px;
+    --grid-gutter: 20px;
+    --grid-margin: 50px;
+    --num-columns: 9;
+    --grid-base-height: 90vh;
+}
+
+.grid-container {
+    display: grid;
+    height: var(--grid-base-height);
+    margin: var(--grid-margin) 0;
+    width: 100%;
+    overflow: hidden;
+
+    column-gap: var(--grid-gutter);
+    row-gap: var(--grid-gutter);
+
+    padding: 0;
+    box-sizing: border-box;
+
+    /* Columnas con ancho fijo */
+    grid-template-columns:
+        1fr
+        repeat(var(--num-columns), var(--grid-col-width))
+        1fr;
+
+    /* Filas en posiciones específicas del alto, son acumulativas*/
+    grid-template-rows:
+        calc((var(--grid-base-height) - (3 * var(--grid-gutter))) * 0.05)
+        calc((var(--grid-base-height) - (3 * var(--grid-gutter))) * 0.25)
+        calc((var(--grid-base-height) - (3 * var(--grid-gutter))) * 0.5)
+        auto;
+}

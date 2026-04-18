@@ -3,7 +3,6 @@ Template para generar una web para dataviz
 
 Este es un template para generar una web para dataviz usando:
 - [D3js](https://d3js.org/)
-- [Bootstrap](https://getbootstrap.com/)
 
 Requerimientos
 ------------

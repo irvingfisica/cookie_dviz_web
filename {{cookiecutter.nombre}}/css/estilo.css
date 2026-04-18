@@ -31,8 +31,32 @@ body {
 
     /* Filas en posiciones específicas del alto, son acumulativas*/
     grid-template-rows:
+        calc((var(--grid-base-height) - (3 * var(--grid-gutter))) * 0.1)
+        calc((var(--grid-base-height) - (3 * var(--grid-gutter))) * 0.8)
         calc((var(--grid-base-height) - (3 * var(--grid-gutter))) * 0.05)
-        calc((var(--grid-base-height) - (3 * var(--grid-gutter))) * 0.25)
-        calc((var(--grid-base-height) - (3 * var(--grid-gutter))) * 0.5)
         auto;
+}
+
+#editorial-header {
+    grid-column: 2 / -2;
+    grid-row: 1
+}
+
+#grafica-sector {
+    grid-column: 2/7;
+    grid-row: 2 / 3;
+    padding: 0 !important
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#barra-lateral {
+    grid-column: 7/-2;
+    grid-row: 2 / 3;
+}
+
+#fuente {
+    grid-column: 2/7;
+    grid-row: 3;
 }

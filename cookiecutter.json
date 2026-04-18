@@ -1,6 +1,5 @@
 {
-    "nombre": "Nombre del proyecto",
-    "titulo": "Titulo de la web",
-    "descripcion": "Descripción de la web",
-    "data": "\"./resources/datos/data.json\""
+  "nombre": "Nombre del proyecto",
+  "titulo": "Titulo de la web",
+  "descripcion": "Descripción de la web"
 }
